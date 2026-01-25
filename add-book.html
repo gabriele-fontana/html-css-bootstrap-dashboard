@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Add Book</title>
+</head>
+<body>
+    <!-- add navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+    <div class="container-fluid">
+        <!-- Logo placeholder -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="./dashbo_img/img/duck.png" alt="logo" width="35" height="35">
+            
+            <!-- I testi nell'immagine sembrano essere i link e non parte del brand -->
+        </a>
+
+        <!-- Toggler per dispositivi mobili -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Links a sinistra -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Catalogo Libri</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Anagrafica Utenti</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Storico Prestiti</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                </li>
+            </ul>
+
+            <!-- Form di ricerca a destra -->
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
+                <button class="btn btn-outline-secondary" type="submit">Cerca</button>
+            </form>
+        </div>
+    </div>
+    </nav>
+    <div class="container">
+        <h1>Nuovo Libro</h1>
+        <!-- author's name row -->
+        <div class="row">
+            <div class="col-6">
+                <label for="nomeAutore" class="form-label">Nome Autore</label>
+                <input type="text" class="form-control" id="nomeAutore" placeholder="Inserisci il nome dell'autore">
+            </div>
+            <div class="col-6">
+                <label for="cognomeAutore" class="form-label">Cognome Autore</label>
+                <input type="text" class="form-control" id="cognomeAutore" placeholder="Inserisci il cognome dell'autore">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

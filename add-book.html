@@ -13,7 +13,7 @@
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
     <div class="container-fluid">
         <!-- Logo placeholder -->
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center" href="./index.html">
             <img src="./dashbo_img/img/duck.png" alt="logo" width="35" height="35">
             
             <!-- I testi nell'immagine sembrano essere i link e non parte del brand -->
@@ -28,7 +28,7 @@
             <!-- Links a sinistra -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Catalogo Libri</a>
+                    <a class="nav-link" href="./index.html">Catalogo Libri</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Anagrafica Utenti</a>
@@ -42,7 +42,7 @@
             </ul>
 
             <!-- Form di ricerca a destra -->
-            <form class="d-flex" role="search">
+            <form class="d-flex d-lg-none" role="search">
                 <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
                 <button class="btn btn-outline-secondary" type="submit">Cerca</button>
             </form>
@@ -89,14 +89,23 @@
             <label for="isbn" class="form-label">ISBN#</label>
             <input type="text" class="form-control" id="isbn" placeholder="Inserisci il codice ISBN#">
         </div>
+        </div>
+        <hr>
         <!-- note's row-->
-    <div class="row">
+        <div class="row">
         <div class="col-12 mb-3">
             <label for="note" class="form-label">Note</label>
             <textarea class="form-control" id="note" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
         </div>
+
+        <!-- add button and checkbox -->
+        
     </div>
-        </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="disponibileDigitale">
+        <label class="form-check-label" for="disponibileDigitale">Disponibile anche in digitale</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
     </div>
 </body>
 </html>
